@@ -1,0 +1,17 @@
+@media (max-width: 940px){
+    body{
+        flex-direction: column;
+    }
+    
+    .pergunta{
+        padding: 40px;
+        justify-content: center;
+        margin: 0 auto;
+        
+    }
+
+    .form{
+        justify-content: center;
+        margin: 0 auto;
+    }
+}

@@ -1,20 +1,17 @@
-const inputText = document.querySelectorAll(".dados");
-const botao = document.getElementById("btnEnviar");
-const aviso = document.querySelectorAll(".campoOb");
+const camposFormulario = document.querySelectorAll(".campo");
+const botaoEnviar = document.querySelector(".btn-enviar");
 
-botao.addEventListener('click', () => {
-    inputText.forEach((elemento, index) => {
-
-        if (elemento.value === "") {
-            elemento.classList.remove('campo-preenchido');
-            elemento.classList.add('campo-nao-preenchido');
-            aviso[index].classList.add("mostrar");        
+botaoEnviar.addEventListener('click', (e) => {
+    e.preventDefault()
+    camposFormulario.forEach((input) => {
+        if (input.value) {
+            input.classList.add('valido');
+            input.nextElementSibling.classList.remove('mostrar')       
            
         } else {
-            elemento.classList.remove('campo-nao-preenchido');
-            elemento.classList.add('campo-preenchido');
-            aviso[index].classList.remove("mostrar");
+            input.classList.remove('valido');
+            input.classList.add('erro');
+            input.nextElementSibling.classList.add("mostrar");
         }
-    });
-});
-
+    })
+})

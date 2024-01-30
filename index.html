@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
 
 </head>
 
@@ -21,23 +22,22 @@
     </div>
 
     <div class="form">
-        <input type="text" class="dados" placeholder="Nome Completo *">
-        <p class="campoOb">campo obrigatório</p>
+        <input type="text" class="campo" placeholder="Nome Completo *">
+        <p class="campo-erro">campo obrigatório</p>
         
-        <input type="text" class="dados" placeholder="Email *">
-        <p class="campoOb">campo obrigatório</p>
+        <input type="text" class="campo" placeholder="Email *">
+        <p class="campo-erro">campo obrigatório</p>
         
-        <input type="text" class="dados" placeholder="Telefone *">
-        <p class="campoOb">campo obrigatório</p>
+        <input type="text" class="campo" placeholder="Telefone *">
+        <p class="campo-erro">campo obrigatório</p>
 
-        <textarea name="mensagem" class="dados" cols="30" rows="10" placeholder="Mensagem *"></textarea>
-        <p class="campoOb">campo obrigatório</p>
+        <textarea name="mensagem" class="campo" cols="30" rows="10" placeholder="Mensagem *"></textarea>
+        <p class="campo-erro">campo obrigatório</p>
 
-        <p class="campo">*Campos Obrigatórios</p>
+        <p class="campos">*Campos Obrigatórios</p>
 
-        <button class="botao" id="btnEnviar">Enviar</button>
+        <button type="submit" class="btn-enviar" id="btn-enviar">Enviar</button>
     </div>
     <script src="./src/js/index.js"></script>
 </body>
-
 </html>

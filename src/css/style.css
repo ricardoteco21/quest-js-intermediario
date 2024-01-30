@@ -28,7 +28,7 @@ body {
     font-weight: 400;
 }
 
-.campo{
+.campos{
     margin-left: -180px;
     font-size: 15px;
 }
@@ -45,7 +45,8 @@ body {
     margin: 100px;
 }
 
-.form .dados{
+.form .campo{
+    resize: none;
     padding: 10px;
     margin-top:  10px;
     width: 298.01px;
@@ -54,7 +55,7 @@ body {
 
 }
 
-.form .botao{
+.form .btn-enviar{
     background-color: #3CCC87;
     margin-top:  10px;
     color: #fff;
@@ -64,21 +65,21 @@ body {
     border-radius: 5px;
 }
 
-.campo-preenchido{
+.valido{
 	color: green;
 }
 
-.campo-nao-preenchido{
+.erro{   
     color: red;
+    font-size: 0.8rem;
 }
 
-.campoOb{
+.campo-erro{
     opacity: 0;
-    color: red;
-    margin-left: -220px;
-    font-size: 0.8rem;
 }
 
 .mostrar{
     opacity: 1;
+    color: red;
+    margin-left: -190px;
 }
